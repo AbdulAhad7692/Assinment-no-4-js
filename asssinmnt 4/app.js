@@ -26,10 +26,10 @@ var signal = prompt("Color of Traffic Signal")
 if (signal == "red") {
     alert("Must Stop")
 }
-else if (signal == "yellow"){
+else if (signal == "yellow") {
     alert("Ready to Move")
 }
-else if( signal == "green") {
+else if (signal == "green") {
     alert("Move Now")
 }
 else {
@@ -38,11 +38,11 @@ else {
 
 //____QUESTION NO 4____//
 
-var fuel=prompt("Remaining fuel left  ")
-if(fuel <= 0.25 ) {
+var fuel = prompt("Remaining fuel left  ")
+if (fuel <= 0.25) {
     alert("Please Refill Your Fuel")
 }
-else{
+else {
     alert("bhot Petrol hai Ameerzade apke pass")
 }
 
@@ -104,19 +104,19 @@ document.write("<br>")
 if (percent >= 80) {
     document.write("Grade : A-One")
     document.write("<br>")
-    document.write("Remarks : Excellent")   
+    document.write("Remarks : Excellent")
 }
-else if(percent >= 70){
+else if (percent >= 70) {
     document.write("Grade : A")
     document.write("<br>")
     document.write("Remarks : Good")
 }
-else if(percent >= 60){
+else if (percent >= 60) {
     document.write("Grade : B")
     document.write("<br>")
     document.write("Remarks : You Need To Improve")
 }
-else{
+else {
     document.write("Grade : Fail")
     document.write("<br>")
     document.write("Remarks : Sorry")
@@ -138,7 +138,7 @@ else {
 
 // ___QUESTION NO 8___//
 var three;
-three = prompt("Enter Any Number","3")
+three = prompt("Enter Any Number", "3")
 if (three % 3 == 0) {
     alert("Number is Divisible by 3")
 }
@@ -149,33 +149,33 @@ else {
 // ___QUESTION NO 9___//
 var even;
 
-even=prompt("Enter Any Number")
-if(even % 2 == 0){
+even = prompt("Enter Any Number")
+if (even % 2 == 0) {
     alert("Given Number is Even")
 }
-else{
+else {
     alert("Given Number is Odd")
 }
 
 // ___QUESTION NO 10___//
 var temp;
 temp = prompt("Enter Today's Temperature")
-if(temp > 40){
+if (temp > 40) {
     alert("It's too hot outside")
 }
-else if(temp > 30){
+else if (temp > 30) {
     alert("The Weather Today is Normal")
 }
-else if(temp > 20){
+else if (temp > 20) {
     alert("Today's Weather is Cool")
 }
-else if (temp >10){
+else if (temp > 10) {
     alert("OMG! Today's Weather is so cool")
 }
-else if (temp > 0){
+else if (temp > 0) {
     alert("freezing outside")
 }
-else{
+else {
     alert("Value Enter krni hoti hai")
 }
 
@@ -188,7 +188,7 @@ var add = -(-num1 - num2);
 var subtract = num1 - num2;
 var product = num1 * num2;
 var divide = num1 / num2;
-var mod =  num1 % num2;
+var mod = num1 % num2;
 document.write("<br>")
 document.write("Addition of " + num1 + " and " + num2 + " is : " + add)
 document.write("<br>")
@@ -199,3 +199,87 @@ document.write("<br>")
 document.write("Division of  " + num1 + " and " + num2 + " is : " + divide)
 document.write("<br>")
 document.write("Mod of  " + num1 + " and " + num2 + " is : " + mod)
+
+
+// _______CHAPTER 12-13_______//
+
+var char = prompt("Enter a Keyword")
+if (char >= 65 && char <= 90) {
+    alert("UPPERCASE")
+}
+else if (char >= 97 && char <= 122) {
+    alert("LOWER CASE")
+}
+else {
+    alert("print krde")
+}
+
+// ___QUESTION NO 2___//
+var value1;
+var value2;
+
+value1 = prompt("Enter number 1")
+value2 = prompt("Enter number 2")
+
+if (value1 > value2) {
+    alert(value1 + " is bigger then " + value2)
+}
+
+else if (value2 > value1) {
+    alert(value1 + " is less then " + value2)
+}
+else if (value1 == value2) {
+    alert(value1 + " both values are equal " + value2)
+}
+else {
+    alert("VALUE ENTER KRDE BHAI")
+}
+
+// ___QUESTION NO 3____//
+
+var data1;
+data1 = prompt("ENTER A NUMBER")
+
+if (data1 > 0) {
+    alert("NUMBER IS POSITIVE")
+}
+else if (data1 < 0) {
+    alert("NUMBER IS NEGATIVE")
+}
+else {
+    alert("NUMBER IS ZERO")
+}
+
+// ___QUESTION NO 4___//
+var vowel;
+vowel = prompt("ENTER A ALPHABET \n A PROGRAM TO CHECK ALPHABET IS VOWEL OR NOT")
+if (vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u") {
+    alert("alphabet is vowel")
+}
+else {
+    alert("Alphabet is not a vowel")
+}
+
+// ___QUESTION NO 5___//
+
+var password = prompt("Enter your password")
+var password1 = prompt("Re-Enter your password")
+
+if (password == password1) {
+    alert("Correct! The password you Entered matches the original password")
+}
+else {
+    alert("Password is Incorrect")
+}
+
+// ___QUESTION NO 6___//
+var greeting;
+var hour;
+hour = prompt("Enter time in 24hr format")
+if (hour < 18) {
+    alert("Good day")
+}
+else {
+    alert("Good evening")
+}
+
